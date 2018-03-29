@@ -1,12 +1,11 @@
-const INITIAL_STATE = { 
-	AdsState: true
+const INITIAL_STATE = {
+	AdsState: true,
 };
 
-
 export default (state = INITIAL_STATE, action) => {
-	switch (action.type){
+	switch (action.type) {
 		case 'AD_RELOAD':
-			return {...state, AdsState: action.payload };
+			return { ...state, AdsState: action.payload };
 		default:
 			return state;
 	}
